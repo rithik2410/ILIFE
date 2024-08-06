@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.head>img{
+        height: 90px;
+}
+.head{
+    background-image: url(../img/header.jpg);
+    display: flex;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding-left: 25px;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 5;
+}
+.head h1{
+    padding-left: 8%;
+    color: white;
+}
+.links{
+    background-color: rgb(217, 207, 207);
+    padding: 27px;
+}
+.links>button:hover{
+    cursor: pointer;
+}
+.links>a{
+    text-decoration: none;
+    background-color: rgb(66, 115, 184);
+    padding: 10px 50px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.links>#btn-1,#btn-2{
+    border: none;
+    padding: 10px 25px;
+    background-color: rgb(28, 89, 181);
+    color: white;
+    border-radius: 4px;
+}
+.links>#btn-1{
+    color: white;
+    background-color: rgb(28, 89, 181);
+    margin-left: 390px;
+    &:hover{
+        color: black;
+    background-color: white;
+    border:1px solid black;
+    }
+}
+ .links>#btn-2:hover{
+    color: black;
+    background-color: white;
+    border:1px solid black; 
+}
+.links>.active:hover{
+    background-color: red;
+}
+
+
+
+
+/* Home */
+
+.containers{
+    width: 95%;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 45px;
+}
+.container1>img{
+    background-color: yellow;
+    margin-top: 185px;
+    margin-left: 45px;
+}
+.container2{
+    width: 70%;
+}
+.container3{
+    width: 25%;
+}
+.container3>ul>li{
+    list-style-type: none;
+    text-align: center;
+    color: rgb(84, 83, 83);
+    font-size: 18px;
+}
+.container3>h1{
+    color: rgb(66, 115, 184);
+    text-align: center;
+    margin-bottom: 15px;
+}
+.container2>h1{
+    color: rgb(220, 70, 70);
+    margin-bottom: 15px;
+}
+.container2>p{
+    color: rgb(84, 83, 83);
+    display: flex;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+
+
+
+/* About Page */
+.about{
+    padding: 20px;
+    margin: 20px;
+}
+.about h1{
+    color: rgb(220, 70, 70);
+    padding-bottom: 15px;
+    /* margin-bottom: 180px; */
+    font-size: 25px;
+    margin-top: 180px;
+}
+.about h2{
+    color: rgb(53, 118, 223);
+    margin-bottom: 15px;
+    font-size: 20px;
+    margin-top: 0px;
+}
+.about p {
+    color:rgb(87, 87, 87);
+    line-height: 30px;
+    font-size: 18px;
+    margin: 25px 0px;
+}
+
+
+
+/* Service Page */
+.service{
+    padding-top: 143px;
+}
+.service h1{
+    margin-bottom: 25px;
+    margin-top: 50px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    color: rgb(220, 70, 70);
+}
+ .serv1 h2{
+    color: rgb(53, 118, 223);
+}
+.main-serv{
+    display: flex;
+
+}
+.main-serv>.serv1{
+    background-color: rgb(226, 222, 222);
+    margin: 20px;
+    padding: 20px 25px;
+}
+.serv1>p{
+    padding-top: 15px;
+    /* margin-bottom: 20px; */
+    font-size: 18px;
+    line-height: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.serv1>button{
+    margin-left: 81%;
+    padding: 10px 30px;
+    background-color: rgb(227, 24, 85);
+    color: white;
+    border: none;
+    border-radius: 13px;
+}
+
+
+/* Portfolio Page */
+ .portfolio{
+    padding-top: 220px;
+ }
+.portfolio h1{
+    padding-left: 60px;
+    margin-top: 30px;
+    color: rgb(220, 70, 70);
+}
+.port-container1, .port-container2{
+    margin-left: 130px;
+    padding: 10px 15px 5px 10px; 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.port-container1 img:hover{
+    transform: scale(1.2);
+    transition-duration: 0.8s;
+    border-radius: 20px;
+}
+.port-container2 img:hover{
+    transform: scale(1.2);
+    transition-duration: 0.8s;
+    border-radius: 20px;
+}
+figure>figcaption{
+    background-color: red;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+figcaption:hover{
+    cursor: pointer;
+    background-color: hotpink;
+}
+
+
+
+
+/* CONTACT US */
+.contact{
+    height: 100px;
+    margin-top: 210px;
+}
+.contact h1{
+    padding-left: 40px;
+    color: rgb(220, 70, 70);
+}
+.cont-container{
+    /* margin-left:80px; */
+    margin: 22px 50px 50px 470px;
+    /* margin: 15px 15px 15px 30%; */
+    padding: 25px;
+    font-size: 18px;   
+}
+.contact input, .contact textarea{
+    border: none;
+    background-color: rgb(201, 193, 193);
+    width: 400px;
+    margin:10px 15px 15px 15px;
+    padding:18px 22px;
+}
+.contact button{
+    margin-left: 16px;
+    padding: 10px 166px;
+    font-size: 18px;
+    /* padding-left: 37%;
+    padding-right: 37%; */
+    background-color:rgb(98, 150, 221) ;
+    color: white;
+    border: none;
+    /* margin-bottom: 68px; */
+}
+#btn:hover{
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer{
+    background-color: rgb(174, 172, 172);
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 475px;
+}

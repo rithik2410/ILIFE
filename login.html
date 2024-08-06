@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="../ILIFE/assets/img/logo.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Montserrat, sans-serif;
+        }
+        body {
+            background: url(./assets/img/blur.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .login {
+            background-color: #252525;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+            border-radius: 10px;
+            padding: 85px 40px;
+            font-size: larger;
+            text-align: center;
+            position: absolute;
+            top: -100%;
+            animation: slideDown 0.7s forwards;
+        }
+        @keyframes slideDown {
+            0% {
+                top: -100%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            70% {
+                top: 55%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            100% {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        input {
+            height: 45px;
+            width: 250px;
+            padding: 0 20px;
+            border-radius: 2px;
+            background-color: transparent;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            outline: none;
+            font-size: medium;
+            color: white;
+            border-color: #fff;
+        }
+        .btn {
+            height: 50px;
+            width: 250px;
+            border-radius: 2px;
+            font-size: 18px;
+            font-weight: 500;
+            outline: none;
+            border: none;
+            color: #252525;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        p {
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .alert {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            background-color: gray;
+            color: #252525;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+            text-align: center;
+            z-index: 1000;
+            animation: slideDown 0.7s forwards;
+        }
+        .alert h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .alert button {
+            background-color: #252525;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+            color: #aeff58;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="login">
+    <form action="./index.html" name="login" onsubmit="return pass()">
+        <div><img style="height: 70px;" src="./assets/img/logo.png"><h1 style="color: white;">ILIFE TECHNOLOGIES</h1></div>
+        <br>
+        <p>ADMIN LOGIN</p>
+        <br>
+        <div class="input-field">
+            <input type="text" name="USERNAME" placeholder="USERNAME" value="Rithik" required>
+            <label></label>
+        </div>
+        <br>
+        <div class="input-field">
+            <input type="password" name="PASSWORD" placeholder="PASSWORD" value="2410" required>
+            <label></label>
+        </div>
+        <br>
+        <button class="btn" type="submit">SUBMIT</button>
+    </form>
+</div>
+<div class="alert" id="customAlert">
+    <h2>Invalid Username or Password</h2>
+    <button onclick="document.getElementById('customAlert').style.display='none'">Try Again</button>
+</div>
+<script>
+    function pass() {
+        var USERNAME = document.login.USERNAME.value;
+        var PASSWORD = document.login.PASSWORD.value;
+        if (USERNAME != "Rithik" || PASSWORD != "2410") {
+            document.getElementById('customAlert').style.display = 'block';
+            return false;
+        }
+    }
+</script>
+</body>
+</html>
